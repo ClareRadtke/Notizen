@@ -26,13 +26,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Requirements:
   - [x] Application should have a db.json file
-  - [ ] The following HTML routes should be created:
-    - [ ] `GET /notes` should return the `notes.html` file
-    - [ ] `GET *` should return the `index.html` file
-  - [ ] The following API routes should be created:
-    - [ ] `GET /api/notes` should read the `db.json` file and return all saved notes as JSON
-    - [ ] `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client
+  - [x] The following HTML routes should be created:
+    - [x] `GET /notes` should return the `notes.html` file
+    - [x] `GET *` should return the `index.html` file
+  - [x] The following API routes should be created:
+    - [x] `GET /api/notes` should read the `db.json` file and return all saved notes as JSON
+    - [x] `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client
 
-  - [ ] Application front end must connect to an Express.js back end
+  - [x] Application front end must connect to an Express.js back end
   - [ ] Application back end must store notes with unique IDs in a JSON file
   - [ ] Application must be deployed to Heroku
