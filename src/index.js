@@ -5,7 +5,7 @@ const uniqid = require("uniqid");
 
 const app = express();
 
-const db = require("../db/db.json");
+let db = require("../db/db.json");
 
 // Setting up middleware
 app.use(express.static("public"));
@@ -34,6 +34,20 @@ app.post("/api/notes", (req, res) => {
     }
   );
 });
+
+app.delete("/api/notes/:id", (req, res) => {
+  const id = req.params.id;
+  db = db.filter((note) => note.id != id);
+  fs.writeFile(
+    path.join(__dirname, "..", "db", "db.json"),
+    JSON.stringify(db, null, 2),
+    (err) => {
+      if (err) console.error(err);
+      res.json(db);
+    }
+  );
+});
+
 // Handle errors
 app.use(function (req, res, next) {
   res.sendFile(path.join(__dirname, "../public/index.html"));

@@ -1,23 +1,17 @@
 [
   {
     "title": "Test Title",
-    "text": "Test text"
+    "text": "Test Note",
+    "id": "g2pc09fkkomuv67m"
   },
   {
-    "title": "Test1",
-    "text": "Tester"
+    "title": "Test view",
+    "text": "testing view \n",
+    "id": "g2pc04vokomuvgr9"
   },
   {
-    "title": "dingdong",
-    "text": "wingwong"
-  },
-  {
-    "title": "got to bed",
-    "text": "bedtime 10.30pm"
-  },
-  {
-    "title": "id test",
-    "text": "is there an id?\n",
-    "id": "g2pc0e4kom979qd"
+    "title": "Deleted",
+    "text": "Testing delete functionality",
+    "id": "g2pc038wkomuvrpo"
   }
 ]
