@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const uniqid = require("uniqid");
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.get("/api/notes", (req, res) => {
 app.post("/api/notes", (req, res) => {
   const newNote = req.body;
   // apply unique id to newNote
+  newNote.id = uniqid();
   db.push(newNote);
   fs.writeFile(
     path.join(__dirname, "..", "db", "db.json"),
@@ -32,7 +34,7 @@ app.post("/api/notes", (req, res) => {
     }
   );
 });
-// Handle 404 errors
+// Handle errors
 app.use(function (req, res, next) {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });

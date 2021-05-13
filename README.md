@@ -34,5 +34,5 @@ THEN I am presented with empty fields to enter a new note title and the note’s
     - [x] `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client
 
   - [x] Application front end must connect to an Express.js back end
-  - [ ] Application back end must store notes with unique IDs in a JSON file
+  - [x] Application back end must store notes with unique IDs in a JSON file
   - [ ] Application must be deployed to Heroku
