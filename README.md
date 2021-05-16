@@ -1,8 +1,8 @@
 # Notizen
 
-Keep track of your notes with [Notizen]("https://clareradtke.github.io/Notizen/)
+Keep track of your notes with [Notizen](https://fathomless-caverns-21283.herokuapp.com/notes)
 
-![Video walkthrough of how to use Notizen]("./public/assets/images/walkthough.gif")
+![Video walkthrough of how to use Notizen](./public/assets/images/walkthrough.gif)
 
 ## User Story
 AS A small business owner  
@@ -37,4 +37,4 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
   - [x] Application front end must connect to an Express.js back end
   - [x] Application back end must store notes with unique IDs in a JSON file
-  - [ ] Application must be deployed to Heroku
+  - [x] Application must be deployed to Heroku
