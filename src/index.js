@@ -6,11 +6,15 @@ const uniqid = require("uniqid");
 const app = express();
 
 let db = require("../db/db.json");
+let port = process.env.PORT;
 
 // Setting up middleware
 app.use(express.static("public"));
 app.use(express.json());
 
+if (port == null || port == "") {
+  port = 8000;
+}
 // Routes
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/notes.html"));
@@ -53,4 +57,4 @@ app.use(function (req, res, next) {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-app.listen(3000, () => console.log("Example app listening on port 3000!"));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
