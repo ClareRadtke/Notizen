@@ -1,6 +1,6 @@
 # Notizen
 
-Keep track of your notes with [Notizen](https://fathomless-caverns-21283.herokuapp.com/notes)
+Keep track of your notes with [Notizen](https://fathomless-caverns-21283.herokuapp.com)
 
 ![Video walkthrough of how to use Notizen](./public/assets/images/walkthrough.gif)
 
