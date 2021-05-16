@@ -32,6 +32,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - [x] The following API routes should be created:
     - [x] `GET /api/notes` should read the `db.json` file and return all saved notes as JSON
     - [x] `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client
+    BONUS: 
+    - [x] `DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete (in order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file)
 
   - [x] Application front end must connect to an Express.js back end
   - [x] Application back end must store notes with unique IDs in a JSON file
